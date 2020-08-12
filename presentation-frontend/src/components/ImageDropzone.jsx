@@ -19,7 +19,7 @@ export const ImageDropzone = ({onDropFile}) => {
     });
 
     return (
-        <div {...getRootProps()} style={{minWidth:'100px',minHeight:'100px', display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <div {...getRootProps()} style={{minWidth:'300px',minHeight:'300px', display:'flex', alignItems: 'center', justifyContent: 'center'}}>
             <input {...getInputProps()} />
             {
                 imageData.data ? <div/> : (isDragActive ? <div style={{textAlign: 'center'}}>
