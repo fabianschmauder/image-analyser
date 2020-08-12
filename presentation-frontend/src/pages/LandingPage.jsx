@@ -19,7 +19,6 @@ function AnalyseResult({show, label}) {
 function FaceAnalyseResult({face}) {
     return <>
         <AnalyseResult show={face.happy} label={"Du siehst Glücklich aus"}/>
-        <AnalyseResult show={face.sad} label={"Du siehst traurig aus wie wäre es mit einem Entenrennen"}/>
         <AnalyseResult show={face.hasBeard} label={"Du solltest dich mal rasieren"}/>
     </>
 }
