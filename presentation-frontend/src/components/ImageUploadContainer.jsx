@@ -8,7 +8,7 @@ function ImageUploadContainer({onImageDrop}) {
     return <div style={{display:'flex', maxWidth: "400px"}}>
 
         <ImageDropzone onDropFile={(file) => {
-            onImageDrop(file);
+            onImageDrop && onImageDrop(file);
         }}/>
     </div>
 }
