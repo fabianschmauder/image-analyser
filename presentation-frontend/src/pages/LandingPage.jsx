@@ -6,6 +6,9 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import "./LandingPage.css"
 function determineWelcomeText(analyseData) {
+    if(analyseData.hasBeard) {
+        return "Rasier dich mal 🪒"
+    }
     if (analyseData.happy) {
         return "Hey du siehst Glücklich aus 😊";
     }
